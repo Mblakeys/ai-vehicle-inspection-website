@@ -1,5 +1,5 @@
-import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Button } from './components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card'
 import { Badge } from './components/ui/badge'
@@ -376,8 +376,13 @@ import Remarketing from "./pages/Remarketing";
 import Analytics from "./components/Analytics";
 
 import Booking from "./pages/Booking";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+import VideoModal from "./components/VideoModal";
 
 function App() {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+  const videoId = "SV8kjJVSvEw"; // YouTube video ID
   return (
     <Router>
       <div className="min-h-screen">
@@ -395,6 +400,8 @@ function App() {
             <Route path="/solutions/fleet-lease" element={<FleetLease />} />
             <Route path="/solutions/remarketing" element={<Remarketing />} />
             <Route path="/book-a-demo" element={<Booking />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
           </Routes>
           <ServicesSection />
           <HowItWorksSection />

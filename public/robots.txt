@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.mjbautomotivesolutions.co.uk/sitemap.xml
+

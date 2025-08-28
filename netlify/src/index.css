@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Define theme tokens (used by shadcn/ui) */
+@theme {
+  --color-background: hsl(0 0% 100%);         /* white */
+  --color-foreground: hsl(240 10% 3.9%);      /* near-black text */
+
+  --color-border: hsl(240 5% 84%);            /* gray borders */
+  --color-input: hsl(240 5% 96%);
+
+  --color-primary: hsl(240 5.9% 10%);         /* dark primary */
+  --color-primary-foreground: hsl(0 0% 98%);  /* white text on primary */
+
+  --color-secondary: hsl(240 4.8% 95.9%);     /* light gray secondary */
+  --color-secondary-foreground: hsl(240 5.9% 10%);
+
+  --color-muted: hsl(240 4.8% 95.9%);         /* background-muted */
+  --color-muted-foreground: hsl(240 3.8% 46.1%);
+
+  --color-accent: hsl(240 4.8% 95.9%);        /* accent backgrounds */
+  --color-accent-foreground: hsl(240 5.9% 10%);
+
+  --color-destructive: hsl(0 84.2% 60.2%);    /* red error */
+  --color-destructive-foreground: hsl(0 0% 98%);
+
+  --color-ring: hsl(240 5% 64%);              /* focus rings */
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: shadcn/ui tweaks */
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

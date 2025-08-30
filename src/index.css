@@ -2,19 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Optional: Add your custom CSS variables for shadcn/ui */
 :root {
   --border: 220 14% 95%;
   --input: 220 14% 96%;
   --ring: 215 20% 65%;
   --background: 0 0% 100%;
   --foreground: 222 47% 11%;
+
   --primary: 222 47% 11%;
   --primary-foreground: 0 0% 100%;
+
   --secondary: 210 16% 82%;
   --secondary-foreground: 222 47% 11%;
+
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
+
+  --muted: 210 16% 90%;
+  --muted-foreground: 222 47% 20%;
+
+  --accent: 210 16% 85%;
+  --accent-foreground: 222 47% 11%;
+
+  --success: 142 72% 29%;
+  --success-foreground: 0 0% 100%;
+
+  --warning: 38 92% 50%;
+  --warning-foreground: 222 47% 11%;
+
+  --error: 0 72% 50%;
+  --error-foreground: 0 0% 100%;
+
   --radius: 8px;
+
   --font-sans: Inter, ui-sans-serif, system-ui;
+  --font-mono: Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
